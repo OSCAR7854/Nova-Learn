@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Learn - Regístrate</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="registro.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                <img src="logo.png" alt="Nova Learn" style="height:40px;width:auto;">
+                <span class="logo-text">Nova<span>Learn</span></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="registro.html">Regístrate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cursos.html">Cursos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="registrate" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-eyebrow">Registro</span>
+                <h2 class="section-title">Crea tu <span>cuenta</span></h2>
+                <p class="section-subtitle">Completa el formulario para comenzar a aprender</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <div class="card shadow border-0">
+                        <div class="card-body p-4 p-md-5">
+                            <form id="registroForm">
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label class="form-label">Nombre</label>
+                                        <input type="text" class="form-control" placeholder="Ingrese su nombre" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label class="form-label">Apellido</label>
+                                        <input type="text" class="form-control" placeholder="Ingrese su apellido" required>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Ciudad</label>
+                                    <input type="text" class="form-control" placeholder="Ingrese su ciudad" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Correo Electrónico</label>
+                                    <input type="email" class="form-control" placeholder="ejemplo@correo.com" required>
+                                </div>
+                                <div class="mb-4">
+                                    <label class="form-label">Contraseña</label>
+                                    <input type="password" class="form-control" placeholder="Mínimo 6 caracteres" required minlength="6">
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100 py-2">
+                                    Iniciar Sesión
+                                </button>
+                                <p class="text-center mt-3 text-muted" style="font-size:0.9rem;">
+                                    ¿Ya tienes cuenta? <a href="#" style="color:var(--teal);text-decoration:none;">Inicia sesión aquí</a>
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-md-start">
+                    <p>© 2026 Nova Learn. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="mailto:contacto@novalearn.com" style="color:var(--teal);text-decoration:none;margin:0 10px;">📧 contacto@novalearn.com</a>
+                    <a href="https://wa.me/50588888888" target="_blank" style="color:var(--teal);text-decoration:none;margin:0 10px;">📱 +505 8888-8888</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('registroForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('✅ Registro exitoso. ¡Bienvenido a Nova Learn!');
+        });
+    </script>
+</body>
+
+</html>

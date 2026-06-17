@@ -1,0 +1,96 @@
+#cursos {
+    background: var(--light);
+    padding: 50px 0 70px;
+}
+
+.course-card {
+    border-radius: var(--radius);
+    overflow: hidden;
+    transition: var(--transition);
+    border: none !important;
+    background: white;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+}
+
+.course-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 60px rgba(5, 90, 138, 0.10);
+}
+
+.course-video {
+    overflow: hidden;
+    background: #000;
+}
+
+.course-video div {
+    transition: var(--transition);
+}
+
+.course-video div:hover {
+    transform: scale(1.02);
+}
+
+.course-card .card-body {
+    padding: 24px 22px 26px;
+    position: relative;
+}
+
+.course-card .badge {
+    font-weight: 600;
+    font-size: 0.7rem;
+    padding: 6px 14px;
+    border-radius: 50px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.course-card .card-title {
+    font-weight: 700;
+    font-size: 1.15rem;
+    margin: 10px 0 8px;
+    color: var(--text);
+}
+
+.course-card .card-text {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin-bottom: 16px;
+    line-height: 1.5;
+}
+
+.course-card .btn-primary {
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 50px;
+    background: var(--blue);
+    border: none;
+    transition: var(--transition);
+}
+
+.course-card .btn-primary:hover {
+    background: var(--teal);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(17, 152, 165, 0.25);
+}
+
+.badge.bg-primary {
+    background: linear-gradient(145deg, #4a6cf7, #6366f1) !important;
+}
+
+.badge.bg-success {
+    background: linear-gradient(145deg, #22c55e, #16a34a) !important;
+}
+
+.badge.bg-info {
+    background: linear-gradient(145deg, #1198A5, #055A8A) !important;
+}
+
+@media (max-width: 768px) {
+    #cursos {
+        padding: 30px 0 50px;
+    }
+    .course-card .card-body {
+        padding: 20px 18px 22px;
+    }
+}

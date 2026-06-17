@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Learn - Cursos</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="cursos.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                <img src="logo.png" alt="Nova Learn" style="height:40px;width:auto;">
+                <span class="logo-text">Nova<span>Learn</span></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="registro.html">Regístrate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="cursos.html">Cursos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="cursos" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-eyebrow">Cursos</span>
+                <h2 class="section-title">Nuestros <span>cursos</span></h2>
+                <p class="section-subtitle">Selecciona el curso que más se adapte a tus necesidades</p>
+            </div>
+            <div class="row g-4">
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card course-card h-100 shadow border-0">
+                        <div class="course-video">
+                            <div onclick="window.open('https://www.youtube.com/watch?v=rg6CiPI6h2g','_blank')">
+                                <img src="https://img.youtube.com/vi/rg6CiPI6h2g/hqdefault.jpg" alt="Curso Programación Web" style="width:100%;height:200px;object-fit:cover;">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Desarrollo Web</span>
+                            <h5 class="card-title">Programación Web desde Cero</h5>
+                            <p class="card-text">Profesor: <strong>Carlos Méndez</strong></p>
+                            <a href="https://www.youtube.com/watch?v=rg6CiPI6h2g" target="_blank" class="btn btn-primary w-100 rounded-pill" style="font-size:1rem;">
+                                $49.99 USD
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card course-card h-100 shadow border-0">
+                        <div class="course-video">
+                            <div onclick="window.open('https://www.youtube.com/watch?v=PywPQR4cyU4','_blank')">
+                                <img src="https://img.youtube.com/vi/PywPQR4cyU4/hqdefault.jpg" alt="Curso Marketing Digital" style="width:100%;height:200px;object-fit:cover;">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <span class="badge bg-success mb-2">Marketing</span>
+                            <h5 class="card-title">Marketing Digital Avanzado</h5>
+                            <p class="card-text">Profesor: <strong>María Fernández</strong></p>
+                            <a href="https://www.youtube.com/watch?v=PywPQR4cyU4" target="_blank" class="btn btn-primary w-100 rounded-pill" style="font-size:1rem;">
+                                $59.99 USD
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card course-card h-100 shadow border-0">
+                        <div class="course-video">
+                            <div onclick="window.open('https://www.youtube.com/watch?v=7V_tPbWw48Y','_blank')">
+                                <img src="https://img.youtube.com/vi/7V_tPbWw48Y/hqdefault.jpg" alt="Curso SQL y MySQL" style="width:100%;height:200px;object-fit:cover;">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <span class="badge bg-info mb-2">Bases de Datos</span>
+                            <h5 class="card-title">SQL y MySQL Profesional</h5>
+                            <p class="card-text">Profesor: <strong>Luis Ramírez</strong></p>
+                            <a href="https://www.youtube.com/watch?v=7V_tPbWw48Y" target="_blank" class="btn btn-primary w-100 rounded-pill" style="font-size:1rem;">
+                                $44.99 USD
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-md-start">
+                    <p>© 2026 Nova Learn. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="mailto:contacto@novalearn.com" style="color:var(--teal);text-decoration:none;margin:0 10px;">📧 contacto@novalearn.com</a>
+                    <a href="https://wa.me/50588888888" target="_blank" style="color:var(--teal);text-decoration:none;margin:0 10px;">📱 +505 8888-8888</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
